@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Palindrome {
     public static void main(String[] args) {
-        int val = 2002;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Number");
+        int val = sc.nextInt();
         int sum = 0;
         int copy = val;
         while (val > 0) {
@@ -13,5 +17,6 @@ public class Palindrome {
         }else{
             System.out.println("Number is not Palindrome");
         }
+        sc.close();
     }
 }
